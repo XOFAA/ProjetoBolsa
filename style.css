@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.navbar{
+   background-color:  #daac00 !important;
+   padding: 20px;
+   
+}
+.nav-item .nav-link{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+}
+#logo-menu img{
+    width: 200px;
+  
+}
+.form-control {
+background-color: #fcc302;
+border-radius: 0px;
+border: 0px;
+text-decoration: none;
+}
+.form-control::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+.d-flex .btn{
+    width: 70px;
+    height: 50px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #00bec9;
+    color: #fff;
+}
+
+#background-menu{
+    background-color: #fcc302;
+    height: 900px;
+  
+}
+#titulo-menu h1{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding-top: 300px;
+    color: #fff;
+    font-size: 65px;
+}
+#titulo-menu p {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+}
+#titulo-menu button{
+    margin-top: 40px;
+    background-color: #00bec9;
+    border-radius: 7px;
+    border: 0px;
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+#btn-ourservice{
+    background-color: transparent !important;
+    border: 3px solid #fff !important;
+}
+#cachorro-menu{
+   padding-top: 200px;
+}
