@@ -268,3 +268,28 @@ font-size: 25px;
     font-size: 20px;
     color: #fff;
 }
+
+
+
+#recent-post{
+    padding-top: 100px;
+    color: #313243;
+}
+
+#recent-post h1{
+    font-size: 50px;
+    font-weight:900;
+    padding-bottom: 10px;
+}
+#recent-post p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#titulo-post img{
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+ #img-meio{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
