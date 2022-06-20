@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .navbar{
    background-color:  #daac00;
    padding: 20px;
    
 }
+
 .nav-item .nav-link{
     color: #fff;
     font-size: 18px;
@@ -16,8 +18,7 @@
     
 }
 #logo-menu img{
-    width: 200px;
-  
+width: 200px;
 }
 .form-control {
 background-color: #fcc302;
@@ -78,4 +79,99 @@ box-shadow: none !important;
 }
 #cachorro-menu{
    padding-top: 200px;
+}
+
+#titulo-sobre h1{
+    padding-top: 200px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 1000;
+    color: #313243;
+    font-size: 50px;
+}
+#titulo-sobre p{
+font-size: 25px;
+}
+
+#titulo-sobre button{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+    width: 180px;
+    height: 60px;
+    background-color: #fcc302;
+    border: 0;
+    border-radius: 7px;
+  
+}
+
+#video-cao-sobre{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.servicos{
+    padding-top: 100px;
+ 
+}
+.servicos h1 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+}
+
+.servicos p{
+    font-family: 'Poppins',sans-serif;
+   font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+}
+
+#titulo-servicos{
+    padding-top: 50px;
+}
+#titulo-servicos h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+
+#titulo-servicos p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+#otite-video{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#otite-titulo h1{
+    padding-top: 200px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: #313243;
+}
+#otite-titulo p {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #313243;
+}
+
+#otite-titulo button{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+    width: 180px;
+    height: 60px;
+    background-color: #fcc302;
+    border: 0;
+    border-radius: 7px;
 }
