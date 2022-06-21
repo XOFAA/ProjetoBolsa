@@ -230,21 +230,145 @@
   <div class="row">
     <div class="col-md-4" id="titulo-post">
       <img src="./Assets/post1.png" alt="">
+      <div class="textos-titulos ps-3 pt-3">      
+      <h3 class="">As a veterinarian and<br> lover of animals</h3>
+      <span>February 09,2020</span>
+      <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque. Voluptatem, fuga?</p>
+      <a href="#">Read More+</a>
     </div>
-    <div class="col-md-4">
-      <img id="img-meio" src="./Assets/post2.png" alt="">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" id="titulo-post">
+      <img src="./Assets/post2.png" alt="">
+      <div class="textos-titulos ps-3 pt-3">      
+      <h3 class="">As a veterinarian and<br> lover of animals</h3>
+      <span>February 09,2020</span>
+      <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque. Voluptatem, fuga?</p>
+      <a href="#">Read More+</a>
+    </div>
+    </div>
+    <div class="col-md-4" id="titulo-post">
       <img src="./Assets/post3.png" alt="">
+      <div class="textos-titulos ps-3 pt-3">      
+      <h3 class="">As a veterinarian and<br> lover of animals</h3>
+      <span>February 09,2020</span>
+      <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque. Voluptatem, fuga?</p>
+      <a href="#">Read More+</a>
     </div>
+    </div>
+    </div>
+  </div>
 
+
+    <div id="background-Amarelo">
+
+    <div class="container" id="conteudo-extra">
+ 
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Calcule a idade do seu dog</h1>
+         <h4>Digite o Nome do seu Dog</h4>
+      <input type="text" placeholder="Digite o nome do seu dog" id="nome_dog">
+      <h4>Digite a idade do seu dog</h4>
+      <input type="text" placeholder="Digite a Idade do seu dog" id="idade_dog">
+      <button onclick="calcularIdadeDog()">Calcular Idade</button>
+      <h1 id="resultado"></h1>
+        </div>
+        <div class="col-md-6">
+          <h1>Saiba qual cachorro parece mais com voce</h1>
+          <div class="dog_random" id="dog_resultado">
+          
+          </div>
+          <button onclick="ClicouNoBotao()" id="dog_btn">Clique aqui e veja</button>
+         </div>
+      </div>
   </div>
 </div>
 
+<div id="background-footer">
+
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col-md-4">
+      <ul>
+        <li> <span><a href="#">About</a></span></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Brand Guidelines</a></li>
+        <li><a href="#">Term&Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li><span><a href="#">About</a></span></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Brand Guidelines</a></li>
+        <li><a href="#">Term&Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4>Title Here</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <form class="d-flex" role="search">
+        <input class="form-control " type="search" placeholder="Search.. " aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+            height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg></i></button>
+      </form>
+      <div id="logos-footer">
+        <a class="ms-5 pt-4" href="#"><button><img src="./Assets/instagram.svg" alt=""></button></a>
+        <a href="#"><button><img src="./Assets/facebook.svg" alt=""></button></a>
+        <a href="#"><button><img src="./Assets/twitter.svg" alt=""></button></a>
+        <a href="#"><button><img src="./Assets/whatsapp.svg" alt=""></button></a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<script>
+ 
+ const dog_btn = document.getElementById('dog_btn');
+ const dog_resultado = document.getElementById('dog_resultado');
+
+ function ClicouNoBotao() {
+	fetch('https://random.dog/woof.json')
+		.then(res => res.json())
+		.then(data => {
+			if(data.url.includes('.mp4')) {
+				ClicouNoBotao();
+			}
+			else {
+				dog_resultado.innerHTML = `<img src=${data.url} alt="dog" />`;
+			}
+		});
+}
+</script>
+<script>
+        
+  function calcularIdadeDog(){
+     var nome = document.querySelector("#nome_dog").value;
+     var idade = document.querySelector("#idade_dog").value;
+     var resultado= (idade*7);
+     document.querySelector("#resultado").innerText=("O seu Catioro: "+nome+" Tem "+resultado+" anos");
+  }
+
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

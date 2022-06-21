@@ -288,8 +288,86 @@ font-size: 25px;
 
 #titulo-post img{
     width: 350px;
+   
+}
+.textos-titulos{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 350px;
+    padding-bottom: 20px;
 }
- #img-meio{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+#titulo-post h3{
+    font-weight: 600;
+    color: #313243;
+
 }
+#titulo-post span{
+    color: #00bec9;
+}
+#titulo-post p{
+    color: #313243;
+}
+#titulo-post a{
+    font-weight: 800;
+    color: #00bec9;
+    text-decoration: none;
+    font-size: 20px;
+  
+    
+}
+#conteudo-extra{
+    padding-top: 200px;
+    color: #fff;
+}
+
+#conteudo-extra button{
+    margin-top: 40px;
+    background-color: #00bec9;
+    border-radius: 20px;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+#resultado{
+    color: #00bec9;
+}
+.dog_random img{
+    object-fit: cover;
+	height: 100%;
+	width: 100%;
+   }
+
+
+   #background-footer{
+    background-color: #343434;
+   }
+
+   #footer{
+    padding-top: 200px;
+    color: #fff;
+    font-weight: 400;
+ 
+   }
+   #footer ul{
+    list-style: none;
+   }
+   #footer  li a {
+    color: #fff;
+    text-decoration: none;
+   
+   }
+   #footer span{
+    font-size: 20px;
+   }
+
+   #logos-footer button{
+    border-radius: 10px;
+    border: 0;
+    margin-top: 15px;
+  margin-left: 10px;
+    
+
+   }
